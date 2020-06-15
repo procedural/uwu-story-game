@@ -118,11 +118,11 @@ int main(void) {
 
           if (globalCommand.option.textAnimationIsDone) {
             globalCommand.option.result = true;
-            const char * option_text = TextFormat("\n>%s   %s\n\n", globalCommand.option.option1, globalCommand.option.option2);
+            const char * optionText = TextFormat("\n>%s   %s\n\n", globalCommand.option.option1, globalCommand.option.option2);
             globalCommand.option.space1 = textI + 1;
             globalCommand.option.space2 = textI + 1 + globalCommand.option.option1Length + 3;
-            memcpy(&text[textI], option_text, strlen(option_text) + 1);
-            textI += strlen(option_text);
+            memcpy(&text[textI], optionText, strlen(optionText) + 1);
+            textI += strlen(optionText);
           }
         }
 
