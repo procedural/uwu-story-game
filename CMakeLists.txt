@@ -10,5 +10,5 @@ set(BUILD_GAMES    OFF CACHE BOOL "" FORCE) # or games
 add_subdirectory(libs/raylib)
 include_directories(libs/)
 
-add_executable(uwu-story-game src/main.c libs/libco.c)
+add_executable(uwu-story-game src/main.c)
 target_link_libraries(uwu-story-game PRIVATE raylib)
